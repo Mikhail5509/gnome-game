@@ -17,4 +17,4 @@ deploy:
   skip_cleanup: true
   keep_history: true
   commit_message: 'Deploying to GitHub Pages'
-  branch: gh-pages  # Замените на gh-pages, если хотите деплоить в эту ветку
+  branch: gh-pages  
