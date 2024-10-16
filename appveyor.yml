@@ -11,7 +11,7 @@ build_script:
 deploy:
   provider: GitHub
   repository: <Mikhail5509>/<gnome-game>
-  auth_token: GITHUB_TOKEN
+  auth_token: %GITHUB_TOKEN%
   on:
     branch: main
   skip_cleanup: true
