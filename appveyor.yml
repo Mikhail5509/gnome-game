@@ -10,12 +10,11 @@ build_script:
 
 deploy:
   provider: GitHub
-  repository: <Mikhail5509>/<gnome-game>
-  auth_token: GITHUB_TOKEN
+  repository: Mikhail5509/gnome-game
+  auth_token: %GITHUB_TOKEN%
   on:
     branch: main
   skip_cleanup: true
-  # Для деплоя на GitHub Pages
   keep_history: true
   commit_message: 'Deploying to GitHub Pages'
-  branch: main
+  branch: gh-pages  # Замените на gh-pages, если хотите деплоить в эту ветку
