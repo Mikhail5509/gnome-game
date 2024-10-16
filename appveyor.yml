@@ -1,0 +1,20 @@
+version: 1.0.{build}
+image: Visual Studio 2019
+
+configuration:
+  - Release
+
+build_script:
+  - npm install
+  - npm run build
+
+deploy:
+  provider: GitHub
+  repository: <Mikhail5509>/<gnome-game>
+  on:
+    branch: master
+  skip_cleanup: true
+  # Для деплоя на GitHub Pages
+  keep_history: true
+  commit_message: 'Deploying to GitHub Pages'
+  branch: gh-pages
